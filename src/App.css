@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.input{
+  margin: 1rem 0;
+}
+
+.row{
+  display: flex;
+  gap: 100px
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 50px;
+  background-image: url('./assets/banner-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+.banner img {
+  width: 400px;
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.tagline {
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 10px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+/************ Skills Css ************/
+.skill-bx {
+  background: #151515;
+  text-align: center;
+  padding: 20px 20px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 600;
+}
+.skill p {
+  font-size: 1.5rem;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+.tech-stack{
+  margin-top: 8%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tech-stack img{
+  width: 120px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20%;
+}
